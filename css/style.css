@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+p, a, input {
+    font-size: 16px;
+}
+i {
+    font-size: 24px;
+}
+body {
+    background: #CBEDD5;
+    position: relative;
+}
+
+/* header CSS */
+.header {
+    background: #439A97;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px;
+    align-items: center;
+    position: fixed;
+    z-index: 9;
+    top: 0;
+}
+.header__logo a {
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+.header__logo:hover {
+    cursor: pointer;
+}
+.header__logo img {
+    width: 60px;
+}
+.header__logo h3 {
+    margin-left: 20px;
+    color: white;
+}
+.header__menu {
+    color: white;
+}
+.header__list, .header__nav {
+    display: flex;
+}
+.header__nav {
+    align-items: center;
+}
+.header__list {
+    list-style: none;
+}
+.header__item {
+    margin-left: 20px;
+}
+
+.header__item,
+.header__item a {
+    color: #0C2738;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+.header__item:hover,
+.header__item:hover a {
+    cursor: pointer;
+    color: #ccc;
+}
+
+/* main CSS */
+.container {
+    /* margin-top: 120px; */
+    display: flex;
+    padding: 0 50px;
+    justify-content: space-between;
+}
+.main {
+    width: 62%;
+}
+.main__search {
+    margin-top: 120px;
+    width: 80%;
+    position: relative;
+}
+.main__search input {
+    width: 100%;
+    padding: 10px 30px;
+    border-radius: 32px;
+    border: none;
+    outline: none;
+    background: white;
+    color: #0C2738;
+}
+.main__search ::placeholder {
+    color: #0C2738;
+}
+.main__search i {
+    position: absolute;
+    top: 8px;
+    right: 30px;
+    transform: rotate(90deg);
+    color: #0C2738;
+
+}
+.main__header {
+    width: 100%;
+    height: 300px;
+    margin-top: 40px;
+    overflow: hidden;
+    border-radius: 16px;
+    position: relative;
+}
+/* video {
+    width: 100%;
+    height: 100%;
+} */
+.main-header__content {
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+}
+.main-header__content {
+    color: white;
+}
+.main-header__content h1 {
+    font-size: 72px;
+    margin: 20px 0;
+}
+.main-header__content h2 {
+    font-size: 32px;
+}
+.main__content, 
+.intro__content, 
+.phanvung__content,
+.kttv__content {
+  width: 100%;
+  margin-top: 40px;
+  border-radius: 16px;
+  background: white;  
+  padding: 40px;
+  color: #0C2738;
+}
+.main__kttv .kttv__content:first-child {
+    margin-top: 0;
+}
+.intro__content, 
+.phanvung__content,
+.main__kttv {
+    width: 62%;
+    margin-top: 200px;
+}
+.intro__content,
+.phanvung__content,
+.main__kttv {
+    color: #0C2738;
+}
+.intro__content h4,
+.main__kttv h4 {
+    margin-top: 20px;
+}
+.intro__content img,
+.main__kttv img {
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 16px;
+    text-align: center;
+}
+.intro__content p,
+.main__kttv p {
+    margin-top: 10px;
+}
+.intro__content h2,
+.main__kttv h2 {
+    font-size: 22px;
+    text-align: center;
+}
+.phanvung__content h2 {
+    font-size: 20px;
+    text-align: center;
+}
+.phanvung__content img {
+    width: 100%;
+    margin-top: 20px;
+}
+.main__content h1 {
+    font-size: 36px;
+}
+.main__content-container {
+    margin-top: 40px;
+}
+.main-content__item {
+    width: 70%;
+    padding-bottom: 8px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    border-bottom: 2px solid #ccc;
+    justify-content: space-between;
+}
+.main-content__item i {
+    margin-right: 30px;
+}
+
+/* sidebar CSS */
+.sidebar{
+    width: 32%;
+    margin-top: 160px;
+}
+.sidebar__item {
+    margin-top: 40px;
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 16px;
+    display: flex;
+}
+.sidebar__item:hover {
+    cursor: pointer;
+}
+.sidebar__item img {
+    border-radius: 8px;
+}
+.sidebar__item p {
+    margin-left: 20px;
+}
+/* .sidebar__item:first-child {
+    margin-top: 0px;
+} */
+
+/* footer CSS */
+.footer {
+    margin-top: 80px;
+    background: #fff;
+    padding: 30px;
+    color: #0C2738;
+}
+.footer h3 i {
+    margin-left: 10px;
+    padding: 10px;
+    background: #ccc;
+    border-radius: 50%;
+}
+.footer h3 i:hover {
+    cursor: pointer;
+    background: #19AADB;
+    transition: all 0.2s ease;
+}
+.footer__declare {
+    /* margin-top: 30px; */
+    text-align: center;
+}
+.footer__declare p, 
+.footer__declare h4 {
+    margin-top: 16px;
+}
+.footer__declare a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #0C2738;
+}
+
+/* modal CSS */
+.modal {
+    width: 100%;
+    height: 100%;
+    margin-top: 80px;
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-400px);
+    transition: all 0.5s ease;
+}
+.signup,
+.login {
+    margin: 120px 30vw;
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+    border-radius: 16px;
+    display: none;
+    position: relative;
+}
+.modal h2 {
+    color: #0C2738;
+}
+.modal input {
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+    border-radius: 8px;
+    padding: 10px 20px;
+    outline: none;
+    border: 2px solid #ccc;
+}
+.modal p {
+    margin-top: 10px;
+    color: #19AADB;
+}
+.modal a {
+    color: #0C2738;
+    font-weight: 600;
+    text-decoration: none;
+}
+.signup button, 
+.login button {
+    padding: 10px 20px;
+    margin-top:20px;
+    border-radius: 8px;
+    border: none;
+    background: #19AADB;
+    color: white;
+    font-size: 16px;
+    transition: all 0.2s ease;
+}
+.signup button:hover,
+.login button:hover {
+    cursor: pointer;
+}
+.active {
+    display: block;
+}
+.show-modal {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(-50px);
+}
+.icon-close {
+    position: absolute;
+    color: #0C2738;
+    top: -16px;
+    right: -16px;
+    background: #ccc;
+    border-radius: 50%;
+    padding: 10px 15px;
+}
+.icon-close i {
+    font-size: 28px;
+}
+.icon-close:hover {
+    cursor: pointer;
+}
+.error-screen {
+    margin: 40vh 80px;
+    color: #0C2738;
+    display: none;
+}
+
+@media only screen and (max-width: 875px) {
+    .sidebar {
+        display: none;
+    }
+    .main, 
+    .intro__content,
+    .phanvung__content,
+    .main__kttv{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 675px) {
+    .header, .container, .footer {
+        display: none;
+    }
+    .error-screen {
+        display: block;
+    }
+}    

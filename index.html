@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <a href="">
+                <img src="./images/logo.png" alt="">
+                <h3>Weather App</h3>
+            </a>
+        </div>
+
+        <div class="header__nav">
+            <ul class="header__list">
+                <li class="header__item"><a href="./phanvung.html">Phân vùng rủi ro thiên tai</a></li>
+                <li class="header__item"><a href="./kttv.html">Kiến thức KTTV</a></li>
+            </ul>
+
+            <div class="header__user header__item">
+                <p><i class="fas fa-user-plus"></i> Đăng ký/ Đăng nhập</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <main class="main">
+
+            <div class="main__search">
+                <input type="text" id="search-input" placeholder="Nhập tên thành phố bạn tìm kiếm">
+                <i class="fas fa-search"></i>
+            </div>
+
+            <div class="main__header">
+                <video autoplay muted loop id="myVideo">
+                    <source src="./images/29002959_heavy-dark-cloudy-sky-with-fluffy-clouds-natural-sky-background-weather-forecast-concept_by_grigory_bruev_preview.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+                <div class="main-header__content">
+                   <h3 class="location"></h3>
+                   <h1><span class="temp"></span><sup>o</sup>C</h1>
+                   <h2 class="desc"></h2>
+                </div>
+            </div>
+    
+            <div class="main__content">
+                <h3>Thời tiết hôm nay ở <span class="location"></span></h3>
+                <h1><span class="temp"></span><sup>o</sup>C</h1>
+                <div class="main__content-container">
+                    <div class="main-content__item">
+                        <p><i class="fas fa-temperature-low"></i>Nhiệt độ</p>
+                        <p><span class="temp"></span> <sup>o</sup>C</p>
+                    </div>
+    
+                    <div class="main-content__item">
+                        <p><i class="fas fa-tint"></i>Độ ẩm</p>
+                        <p class="humidity"></p>
+                    </div>
+    
+                    <div class="main-content__item">
+                        <p><i class="fas fa-eye"></i>Tầm nhìn xa</i></p>
+                        <p class="visibility"></p>
+                    </div>
+    
+                    <div class="main-content__item">
+                        <p><i class="fas fa-wind"></i>Tốc độ gió</p>
+                        <p class="wind"></p>
+                    </div>
+    
+                    <div class="main-content__item">
+                        <p><i class="fas fa-water"></i>Độ cao so với mực nước biển</p>
+                        <p class="sea"></p>
+                    </div>
+    
+                    <div class="main-content__item">
+                        <p><i class="fas fa-tags"></i>Bầu trời</p>
+                        <p class="desc"></p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="sidebar">
+            <div class="sidebar__item">
+                <img src="./images/slide1.jpg" alt="">
+                <p>FPT Shop tiếp tục tặng ưu đãi đến 6 triệu đồng cho khách hàng đặt trước Galaxy S22 Series</p>
+            </div>
+
+            <div class="sidebar__item">
+                <img src="./images/slide2.jpg" alt="">
+                <p>Galaxy S22 Ultra phá đảo, giá từ 29,990,000đ - ‘Vị vua’ mới của Android</p>
+            </div>
+
+            <div class="sidebar__item">
+                <img src="./images/slide3.jpg" alt="">
+                <p>Quỹ Vinfuture chính thức mở cổng nhận đề cử mùa giải 2022</p>
+            </div>
+
+            <div class="sidebar__item">
+                <img src="./images/slide4.jpg" alt="">
+                <p>Tập đoàn Giáo dục quốc tế Nam Việt vững vàng phát triển sau đại dịch</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+      
+
+        <div class="footer__declare">
+            <h4>©2022 Copyright by Trung tâm Dự báo khí tượng thuỷ văn quốc gia</h4>
+            <p>Dữ liệu được cung cấp bởi <a href="https://openweathermap.org/api">OpenWeatherAPI</a></p>
+        </div>
+    </footer>
+
+
+    <!-- Modal -->
+    <div class="modal">
+        <div class="signup active">
+            <h2>Đăng ký</h2>
+            <form action="" >
+                <input type="text" name="" id="" placeholder="Tên đăng nhập">
+                <input type="email" name="" id="" placeholder="Email của bạn">
+                <input type="password" name="" id="" placeholder="Mật khẩu của bạn">
+                <input type="password" name="" id="" placeholder="Nhập lại mật khẩu">
+                <button>Đăng ký</button>
+            </form>
+            <p>Nếu đã có tài khoản <a id="sub-login" href="">Đăng nhập</a></p>
+            <div class="icon-close"><i class="fas fa-times"></i></div>
+        </div>
+
+        <div class="login">
+            <h2>Đăng nhập</h2>
+            <form action="">
+                <input type="text" name="" id="" placeholder="Tên đăng nhập">
+                <input type="password" name="" id="" placeholder="Mật khẩu của bạn">
+                <button>Đăng nhập</button>
+            </form>
+            <p>Nếu đã có tài khoản <a id="sub-signup" href="">Đăng ký</a></p>
+            <div class="icon-close"><i class="fas fa-times"></i></div>
+        </div>
+
+    </div>
+   
+
+    <script src="js/app.js"></script>
+    <div class="error-screen">
+        <h1>Screen not support. <br> Please, open your desktop.</h1>
+    </div>
+</body>
+</html>
