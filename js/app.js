@@ -1,39 +1,4 @@
-const modal = document.querySelector('.modal');
-const closeModal = document.querySelectorAll('.icon-close');
-const openModal = document.querySelector('.header__user');
-
-// popup modal
-openModal.addEventListener('click', () => {
-    modal.classList.add('show-modal');
-});
-
-closeModal.forEach(e => {
-    e.addEventListener('click', () => {
-        modal.classList.remove('show-modal');
-    })
-})
-
-// login signup
-
-const signup = document.querySelector('.signup');
-const login = document.querySelector('.login');
-const subSignup = document.querySelector('#sub-signup');
-const subLogin = document.querySelector('#sub-login');
-
-subLogin.addEventListener('click', (e) => {
-    e.preventDefault();
-    login.classList.add('active');
-    signup.classList.remove('active');
-});
-
-subSignup.addEventListener('click', (e) => {
-    e.preventDefault();
-    login.classList.remove('active');
-    signup.classList.add('active');
-});
-
 const APP_ID = 'fcb60e4488b97551d4c420aa5cdd5f16'
-const DEFAULT_VALUE = '--';
 
 // api
 async function getWeather(city) {
